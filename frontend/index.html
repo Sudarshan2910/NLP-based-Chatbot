@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jarvis Eatery</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        Welcome to Jarvis Eatery
+    </header>
+
+    <div class="menu">
+        <h2>Our Menu</h2>
+        <ul class="menu-items">
+            <li>
+                Pav Bhaji $6
+                <img src="images/pavbhaji.png" alt="Pav Bhaji">
+            </li>
+            <li>
+                Chole Bhature $7
+                <img src="images/cholebhature.png" alt="Chole Bhature">
+            </li>
+            <li>
+                Pizza $8
+                <img src="images/pizza.png" alt="Pizza">
+            </li>
+            <li>
+                Mango Lassi $5
+                <img src="images/mangolassi.png" alt="Mango Lassi">
+            </li>
+            <li>
+                Masala Dosa $6
+                <img src="images/masaladosa.png" alt="Masala Dosa">
+            </li>
+            <li>
+                Biryani $9
+                <img src="images/biryani.png" alt="Biryani">
+            </li>
+            <li>
+                Vada Pav $4
+                <img src="images/vadapav.png" alt="Vada Pav">
+            </li>
+            <li>
+                Rava Dosa $7
+                <img src="images/ravadosa.png" alt="Rava Dosa">
+            </li>
+            <li>
+                Samosa $5
+                <img src="images/samosa.png" alt="Samosa">
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Location: Opposite Mit ADTU | Jarvis Eatery &copy; 2024</p>
+    </footer>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-btn" class="chatbot-btn">Chat with us!</button>
+
+    <!-- Dialogflow Chatbot iframe (hidden by default) -->
+    <div id="chatbot-container" class="chatbot-container">
+        <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/87900ff5-74eb-4cce-8b29-1a70594c552b"></iframe>
+    </div>
+
+    <!-- JavaScript to toggle chatbot visibility -->
+    <script>
+        const chatbotBtn = document.getElementById('chatbot-btn');
+        const chatbotContainer = document.getElementById('chatbot-container');
+
+        chatbotBtn.addEventListener('click', () => {
+            chatbotContainer.style.display = chatbotContainer.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+
+</body>
+</html>
